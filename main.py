@@ -55,3 +55,4 @@ async def on_message(message):
       await message.channel.send("LLLL")
 
 client.run(os.environ['KEY'])
+#key = MTE3MDk5MjE2MzE3NDIyMzkwMg.GDydqJ.dP8LfyCYesNsbZI5fvWDxO-CQ712p3nFNen0CQ
