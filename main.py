@@ -16,7 +16,7 @@ async def on_message(message):
     return
 
   if message.content.startswith(".Help"):
-    await message.channel.send("Try using : .Help .Hello .Delete .Time .Coinflip")
+    await message.channel.send("Try using : .Help .Hello .Delete .Time .Coinflip .Morning")
     
   if message.content.startswith(".Hello"):
     await message.channel.send("Hi")
@@ -54,5 +54,8 @@ async def on_message(message):
     else:
       await message.channel.send("LLLL")
 
+  if message.content.startswith(".Morning"):
+    await message.channel.send("THIS MORNING I WOKE UP TODAY IN THIS MORNING.IN THE MORNING I WOKE UP THIS MORNING I WOKE UP AND REMEMBER THAT EVERY MORNING THAT I WAKE UP I WILL.I WOKE UP THAT DAY JUST REMEMBER THAT")
+  
 client.run(os.environ['KEY'])
 
