@@ -54,5 +54,5 @@ async def on_message(message):
     else:
       await message.channel.send("LLLL")
 
-client.run("MTE3MDk5MjE2MzE3NDIyMzkwMg.G7tSj-.1Ktdee1hJ_w4L_Tqhr59j54elXQmi2y0OAY7EA")
+client.run(os.environ['KEY'])
 
