@@ -55,7 +55,11 @@ async def on_message(message):
       await message.channel.send("LLLL")
 
   if message.content.startswith(".Morning"):
-    await message.channel.send("THIS MORNING I WOKE UP TODAY IN THIS MORNING.IN THE MORNING I WOKE UP THIS MORNING I WOKE UP AND REMEMBER THAT EVERY MORNING THAT I WAKE UP I WILL.I WOKE UP THAT DAY JUST REMEMBER THAT")
+    await message.channel.send("THIS MORNING I WOKE UP TODAY IN THIS MORNING.IN THE MORNING I WOKE UP THIS MORNING I WOKE UP AND REMEMBER THAT EVERY MORNING THAT I WAKE UP I WILL.I WOKE UP THAT DAY JUST REMEMBER THAT")  
+
+  if not any(message.content.startswith(command) for command in [".Help", ".Hello", ".Time", ".Delete", ".Coinflip", ".Morning"]):
+    await message.channel.send("Im sorry,The commands seem to be invalid.Try using .Help for better knowledge for avaiable commands")
+
+  
   
 client.run(os.environ['KEY'])
-
