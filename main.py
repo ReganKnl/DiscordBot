@@ -88,3 +88,5 @@ def google_search(query):
 
 
 client.run(os.environ['KEY'])
+#client.run('Your Bot Tokens goes here')
+#Please use replit since i tested it on replit.
