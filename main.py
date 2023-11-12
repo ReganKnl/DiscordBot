@@ -87,4 +87,4 @@ def google_search(query):
       return "Error: Unable to perform the Google search."
 
 
-client.run('MTE3MDk5MjE2MzE3NDIyMzkwMg.GQeQ1y.5UhDap9axyQrbhCphjxVYK23RntXIj80gDjviA')
+client.run(os.environ['KEY'])
