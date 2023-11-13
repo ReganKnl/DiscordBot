@@ -10,8 +10,8 @@ import requests
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 
-GOOGLE_API_KEY = 'AIzaSyAhQEc00S7CkplAh5xUOEICcRmnzYCZNW8'
-SEARCH_ENGINE_ID = 'c68361963bf044d3f'
+GOOGLE_API_KEY = 'Your API'
+SEARCH_ENGINE_ID = 'Your ID'
 
 @client.event
 async def on_message(message):
